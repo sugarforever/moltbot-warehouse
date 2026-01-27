@@ -20,16 +20,25 @@ A channel plugin that enables Clawdbot to communicate via Lark (Larksuite) messa
 
 ## Installation
 
-1. Clone this plugin into your Clawdbot plugins directory:
-
 ```bash
-cd /path/to/your/plugins
-git clone <this-repo> lark
-cd lark
+# Clone the repository
+git clone https://github.com/sugarforever/moltbot-warehouse.git
+cd moltbot-warehouse/extensions/lark
+
+# Install dependencies
 npm install
+
+# Install plugin into Clawdbot
+clawdbot plugins install --link .
 ```
 
-2. The plugin will be automatically loaded by Clawdbot.
+Verify installation:
+
+```bash
+clawdbot plugins list
+```
+
+You should see `lark` with status `loaded`.
 
 ## Lark App Setup
 
