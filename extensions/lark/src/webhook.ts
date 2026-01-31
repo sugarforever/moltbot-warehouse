@@ -201,6 +201,10 @@ async function routeMessage(
         },
       });
     },
+    async sendFinalReply(block: Record<string, unknown>) {
+      // Final reply uses the same logic as block reply for Lark
+      await dispatcher.sendBlockReply(block);
+    },
     async waitForIdle() {
       // No buffering, messages sent immediately
     },
